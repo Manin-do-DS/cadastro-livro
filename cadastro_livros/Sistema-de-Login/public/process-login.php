@@ -19,7 +19,7 @@ $usuario = $usuarioDAO->validarLogin($email, $senha);
 if ($usuario) {
     $_SESSION['logado'] = true;
     $_SESSION['usuario_id'] = $usuario->getId();
-    header('Location: ../../cadastro-livros');
+    header('Location: ./../../../');
 } else {
     echo "Email ou senha incorretos.";
 }
